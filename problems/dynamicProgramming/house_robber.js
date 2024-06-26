@@ -1,4 +1,4 @@
-function nonAdjacent(nums, i = 0, memo) {
+function nonAdjacent(nums, i = 0, memo = {}) {
     if (i in memo) return memo[i]
     if (i >= nums.length) return 0
     
